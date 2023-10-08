@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Segoe UI", "Open Sans", sans-serif;
+  background: #3d404a;
+  color-scheme: light dark;  
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  --sb-track-color: #3d404a;
+  --sb-thumb-color: #e1e1ffb3;
+  --sb-size: 6px;
+}
+
+.cm-editor {
+  max-height: 93vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cm-editor {
+      max-height: calc(93vh - 60px);
+  }
+
+  .cm-editor .cm-scroller {
+      min-height: calc(93vh - 60px);
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+  width: var(--sb-size);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(-20px);
+  }
+  100% {
+      transform: translateY(0px);
+  }
+}
