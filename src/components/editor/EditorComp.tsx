@@ -1,4 +1,3 @@
-import React from "react";
 import { useFileSystem } from "../../context/FileContext";
 import useResponsive from "../../hooks/useResponsive";
 import cn from "classnames";
