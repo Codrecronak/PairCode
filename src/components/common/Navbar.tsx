@@ -41,7 +41,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0">
                         <Link to="/" className="flex items-center text-white">
                             <Logo />
-                            <span className="font-normal text-3xl">
+                            <span className="font-normal sm:text-3xl text-2xl">
                                 Pair Code
                             </span>
                         </Link>
