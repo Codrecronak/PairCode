@@ -88,7 +88,7 @@ const JoinForm = () => {
   }, [currentUser, location.state?.redirect, navigate, socket, status]);
 
   return (
-      <div className="flex w-full max-w-[400px] flex-col items-center justify-center gap-4 px-4 pb-4 sm:p-4 sm:w-[500px] sm:p-16">
+      <div className="flex w-full max-w-[400px] flex-col items-center justify-center gap-4 px-4 pb-4 sm:p-4 sm:w-[500px]">
           <h1 className="text-4xl sm:text-6xl font-light">Collaboration.</h1>
           <h1 className="text-4xl sm:text-6xl font-normal">Redefined.</h1>
           <p className="mb-4 text-center md:mb-8 sm:text-2xl text-lg text-[#fff9] font-normal sm:mt-4">

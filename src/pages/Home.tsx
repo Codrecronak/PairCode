@@ -11,7 +11,7 @@ const Home = () => {
                     <div className="w-full max-w-[400px] lg:w-1/2 lg:pl-[3vw] lg:pr-[3vw] mb-8 lg:mb-0">
                         <JoinForm />
                     </div>
-                    <div className="hidden lg:flex lg:w-full lg:animate-move lg:justify-center lg:w-1/2 lg:p-1/4">
+                    <div className="hidden lg:flex lg:animate-move lg:justify-center lg:w-1/2 lg:p-1/4">
                         <img
                             className="w-[400px] xl:w-[600px] 2xl:w-[900px] xl:mr-36 lg:ml-48"
                             src={pairPng}
