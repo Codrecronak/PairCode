@@ -1,4 +1,8 @@
+import { useAppContext } from "../../context/AppContext";
+import { useRef } from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 const Logo = () => (
     <svg
@@ -34,8 +38,17 @@ const Logo = () => (
 );
 
 const Navbar = () => {
+    const { currentUser, setCurrentUser } = useAppContext();
+    const usernameRef = useRef<HTMLInputElement | null>(null);
+
+    const createNewRoom = () => {
+        setCurrentUser({ ...currentUser, roomId: uuidv4() });
+        toast.success("New Room Created", { duration: 750 });
+        usernameRef.current?.focus();
+    };
+
     return (
-        <nav className="w-full bg-[#2C2C32] pt-4">
+        <nav className="w-full bg-[#2C2C32] py-1">
             <div className="max-w-16xl mx-auto px-4 sm:px-6 lg:px-28">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0">
@@ -46,21 +59,14 @@ const Navbar = () => {
                             </span>
                         </Link>
                     </div>
-                    {/* <div className="hidden md:block">
-                        <div className="ml-4 flex items-center">
-                            <span className="font-normal text-lg text-white">
-                                Build with 💙 by{" "}
-                                <a
-                                    href="https://adysfolio.vercel.app"
-                                    className="text-sky-600 hover:text-sky-500"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Aditya Jindal
-                                </a>
-                            </span>
-                        </div>
-                    </div> */}
+                    <div className="hidden xl:flex h-full">
+                        <button
+                            className="px-6 py-2 text-lg font-medium text-white bg-[#0078D4]  hover:bg-[#005a9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0078D4] transition duration-150 ease-in-out"
+                            onClick={createNewRoom}
+                        >
+                            Create New Room
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>

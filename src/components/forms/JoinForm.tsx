@@ -100,7 +100,7 @@ const JoinForm = () => {
                   type="text"
                   name="roomId"
                   placeholder="Room Id"
-                  className="w-full rounded-sm border-none bg-gray-600 px-3 py-3 focus:outline-none"
+                  className="w-full rounded-md border-none bg-gray-600 px-3 py-3 focus:outline-none"
                   onChange={handleInputChanges}
                   value={currentUser.roomId}
               />
@@ -108,20 +108,20 @@ const JoinForm = () => {
                   type="text"
                   name="username"
                   placeholder="Username"
-                  className="w-full rounded-sm border-none bg-gray-600 px-3 py-3 focus:outline-none"
+                  className="w-full rounded-md border-none bg-gray-600 px-3 py-3 focus:outline-none"
                   onChange={handleInputChanges}
                   value={currentUser.username}
                   ref={usernameRef}
               />
               <button
                   type="submit"
-                  className="mt-2 w-full rounded-sm bg-[#0078D4] px-8 py-3 text-lg font-semibold text-white"
+                  className="mt-2 w-full rounded-md bg-[#0078D4] px-8 py-3 text-lg font-semibold text-white"
               >
                   Join a Room
               </button>
           </form>
           <button
-              className="mt-2 w-full rounded-xl bg-[#25252B] px-8 py-3 text-lg font-light tracking-wide text-sky-400 cursor-pointer select-none"
+              className="xl:hidden mt-2 w-full rounded-xl bg-[#25252B] px-8 py-3 text-lg font-light tracking-wide text-sky-400 cursor-pointer select-none"
               onClick={createNewRoom}
           >
               Create New Room
