@@ -7,7 +7,7 @@ const Home = () => {
         <div className="flex flex-col min-h-screen bg-[#2C2C32]">
             <Navbar />
             {/*  */}
-            <div className="w-full bg-[#25252B] text-[#A7A7AA] py-2 px-4 sm:px-6 lg:px-28 text-center text-lg tracking-wide">
+            <div className="w-full bg-[#25252B] text-[#A7A7AA] py-2 px-4 sm:px-6 lg:px-28 text-center md:text-lg tracking-wide">
                 <p className="max-w-4xl mx-auto">
                     Initial requests may take up to a minute to process. Learn
                     more about{" "}
