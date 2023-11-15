@@ -91,7 +91,7 @@ function Editor() {
       //   }}
       // />
 
-      <div className="editor-wrapper" style={{ position: "relative" }}>
+      <div className="editor-wrapper" >
           <style>{`
         .editor-wrapper .cm-gutters {
           padding-left: 20px; /* Adjust this value to increase/decrease padding */
