@@ -42,7 +42,3 @@ You can view the live preview of the project [here](https://paircode-dev.vercel.
 
 -   **Collaborative Drawing:** Enable users to draw and sketch collaboratively in real-time, enhancing the interactive experience of your project.
 
-## ✍️ About Me
-
-| <a href="https://github.com/adityaongit/"><img src="https://img.shields.io/badge/GitHub-100000.svg?style=for-the-badge&logo=github&logoColor=white"/></a> | <a href="https://www.linkedin.com/in/adityaonin/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://adysfolio.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0077B5.svg?style=for-the-badge&logo=vercel&logoColor=white"/></a> |
-|----|----|----|
